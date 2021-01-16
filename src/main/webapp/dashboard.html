@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students-ID</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="100" src="https://www.iiitb.ac.in/includefiles/userfiles/images/iiitb_logo.jpg" width="72">
+        <h3> IIIT B</h3>
+        <p class="lead">The International Institute of Information Technology Bangalore, a Deemed University, popularly known as IIIT-B, was established in 1999 with a vision to contribute to the IT world by focusing on education and research, entrepreneurship and innovation. The Institute is a registered not-for-profit society funded jointly by the Government of Karnataka and the IT industry.</p>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Enter Student ID </h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="sr-only" for="id">Student ID</label>
+                    <input autofocus class="form-control" id="id" placeholder="Student ID" required type>
+                    </select>
+                    <div class="invalid-feedback">
+                        Valid Student id !
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">submit</button>
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                INVALID ID
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Details saved successfully!!
+            </div>
+        </form>
+    </div>
+    <br/>
+    </div>
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
+</html>
